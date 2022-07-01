@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NombresSimpsons, INFO_SIMPSONS } from "./constants";
-import styles from "./styles.module.css";
+// import styles from "./styles.module.css";
+import BioContainer from "../../Components/BioContainer";
+import ButtonContainer from "../../Components/ButtonContainer";
 import Button from "../../Components/Button";
 import Image from "../../Components/Image";
 import H3 from "../../Components/H3";
@@ -27,8 +29,8 @@ const Bio = () => {
   };
 
   return (
-    <div className={styles.bioContainer}>
-      <div className={styles.contenedorBotones}>{crearBotones()}</div>
+    <BioContainer>
+      <ButtonContainer>{crearBotones()}</ButtonContainer>
       <div>
         <div>
           <Image
@@ -41,7 +43,7 @@ const Bio = () => {
           <Description >{bioActiva.descripcion}</Description>
         </div>
       </div>
-    </div>
+    </BioContainer>
   );
 };
 
