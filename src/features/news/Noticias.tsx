@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
-import { SuscribeImage, CloseButton as Close } from "../../assets";
 import { obtenerNoticias } from "./fakeRest";
 import ContenidoModal from "./ContenidoModal";
 import {
-  CloseButton,
-  TarjetaModal,
-  ContenedorModal,
-  DescripcionModal,
-  ImagenModal,
-  TituloModal,
   TarjetaNoticia,
   FechaTarjetaNoticia,
   DescripcionTarjetaNoticia,
@@ -18,8 +11,6 @@ import {
   ListaNoticias,
   TituloNoticias,
   BotonLectura,
-  BotonSuscribir,
-  CotenedorTexto,
 } from "./styled";
 
 export interface INoticiasNormalizadas {

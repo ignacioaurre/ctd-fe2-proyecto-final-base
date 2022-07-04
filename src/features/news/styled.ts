@@ -193,7 +193,7 @@ export const DescripcionModal = styled.p`
   overflow-y: auto;
 `;
 
-export const BotonSuscribir = styled.button`
+export const BotonSuscribir = styled.button<{ref? : any}>`
   width: 20%;
   min-width: 200px;
   border: none;

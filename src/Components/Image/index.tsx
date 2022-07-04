@@ -5,7 +5,7 @@ const Image: React.FC<IPropsImage> = ({
     src,
 }) => {
     return (
-        <img src={src} alt={alt} />
+        <StyledImage src={src} alt={alt} />
     )
 }
 
